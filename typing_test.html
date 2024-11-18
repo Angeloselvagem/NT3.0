@@ -1,0 +1,43 @@
+<!-- HTML File: typing_test.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NerveTracker Typing Test</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-auth.js"></script>
+    <script src="typing_test_script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>NerveTracker</h1>
+        <p>Track your neuromuscular function effortlessly.</p>
+    </header>
+
+    <main>
+        <section id="typing-test">
+            <h2>Typing Assessment</h2>
+            <p id="prompt-text">Mas antes que pudesse falar, Maria Eduarda exclamou, num grito surdo: Meu Deus, somos irmãos!</p>
+            <textarea id="user-input" placeholder="Start typing here..." rows="4"></textarea>
+            <button id="start-test-button" onclick="startTest()">Start Test</button>
+        </section>
+
+        <section id="results">
+            <h2>Results</h2>
+            <p id="typing-speed">Typing Speed: -- CPM</p>
+            <p id="typing-accuracy">Accuracy: -- %</p>
+            <p id="cadency">Cadency (ms per character): --</p>
+            <p id="total-time">Total Time: -- seconds</p>
+        </section>
+
+        <button onclick="goToProgress()">View Progress</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 NerveTracker. All rights reserved.</p>
+    </footer>
+</body>
+<link rel="stylesheet" href="nerve_tracker_typing_test_style.css">
+</html>

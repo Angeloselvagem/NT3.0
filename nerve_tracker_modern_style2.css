@@ -1,0 +1,16 @@
+<section id="typing-test">
+    <h2>Typing Assessment</h2>
+    <p id="prompt-text">The quick brown fox jumps over the lazy dog.</p>
+    <textarea id="user-input" placeholder="Start typing here... rows="4"></textarea>
+    <button id="start-test-button" onclick="startTest()">Start Test</button>
+</section>
+
+<section id="results">
+    <h2>Results</h2>
+    <p id="typing-speed">Typing Speed: -- CPM</p>
+    <p id="typing-accuracy">Accuracy: -- %</p>
+    <p id="cadency">Cadency (ms per character): --</p>
+    <p id="total-time">Total Time: -- seconds</p>
+</section>
+
+<button class="navigation-button" onclick="goToProgress()">View Progress</button>
